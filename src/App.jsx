@@ -1,14 +1,15 @@
+import Navbar from "./navbar/Navbar"
 
 
 
 
 
 function App() {
-  
+
 
   return (
     <>
-      
+      <Navbar />
     </>
   )
 }

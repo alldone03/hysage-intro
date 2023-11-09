@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function navbar() {
+export default function Navbar() {
     const [isNavbarVisible, setNavbarVisibility] = useState(false);
     const toggleNavbar = () => {
         setNavbarVisibility(!isNavbarVisible);
