@@ -1,23 +1,19 @@
+import Aos from "aos";
+import { useEffect } from "react";
+import 'aos/dist/aos.css';
 
 
 export default function Content() {
+    useEffect(() => {
+        Aos.init();
+    }, [])
     return (
         <>
             <div className="pt-20 p-4">
-                <h1 className="text-center">HYSAGE</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque sequi totam quam consectetur vero dolore accusamus nulla, voluptatum nisi repudiandae labore laudantium, ipsa corporis quidem iusto, maxime in consequuntur provident?</p>
+                <h1 className="text-center text-4xl">HYSAGE</h1>
+                <p className="text-robotoflex">hello</p>
+
+
             </div>
         </>
     );

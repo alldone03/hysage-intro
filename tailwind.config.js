@@ -10,6 +10,13 @@ module.exports = {
         },
       },
     },
+    fontFamily: {
+      nunito: ["Roboto Flex", "sans-serif"],
+    },
+    // font
+    // fontFamily: {
+    //   robotoflex: ["Roboto Flex", "sans-serif"],
+    // },
   },
   plugins: [],
 };
