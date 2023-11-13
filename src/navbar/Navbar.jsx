@@ -5,10 +5,10 @@ export default function Navbar() {
     const toggleNavbar = () => {
         setNavbarVisibility(!isNavbarVisible);
     };
-    const dataNavbar = [{ name: 'Home', link: "" }, { name: 'About', link: "" }, { name: 'Contact', link: "" },];
+    const dataNavbar = [{ name: 'Home', link: "" }, { name: 'About', link: "" }, { name: 'Contact', link: "" }, { name: 'Demo', link: "http://monitoring.hysage.my.id/" },];
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-blue-600">
+        <nav className="bg-white border-gray-200 dark:bg-gray-800 z-50 fixed w-full -top-0">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="#" className="flex items-center">
                     <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Hysage</span>
@@ -19,7 +19,7 @@ export default function Navbar() {
                         <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                     </svg>
                 </button>
-                <div className={isNavbarVisible ? "hidden w-full md:block md:w-auto" : "w-full md:block md:w-auto"} id="navbar-default">
+                <div className={!isNavbarVisible ? "hidden w-full md:block md:w-auto" : "w-full md:block md:w-auto"} id="navbar-default">
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-blue-600 dark:border-gray-700">
                         {dataNavbar.map((data, index) => {
                             return (
