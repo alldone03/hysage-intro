@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
@@ -11,12 +12,12 @@ module.exports = {
       },
     },
     fontFamily: {
-      nunito: ["Roboto Flex", "sans-serif"],
+      roboto: ["Roboto Flex", "sans-serif"],
     },
-    // font
-    // fontFamily: {
-    //   robotoflex: ["Roboto Flex", "sans-serif"],
-    // },
   },
-  plugins: [],
+  plugins: [
+    "prettier",
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-style-order",
+  ],
 };

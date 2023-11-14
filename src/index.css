@@ -5,3 +5,12 @@
 @tailwind utilities;
 
 
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
