@@ -1,9 +1,17 @@
 import Aos from "aos";
 import { useEffect } from "react";
 import 'aos/dist/aos.css';
+import { Link } from "react-router-dom";
 
 
 export default function Content() {
+    const dataorang = [
+        { linkfoto: "/img/bg-effect.jpg", nama: 'Rahadian Dwi Martina Putra', role: "CEO", linkedin: "#", instagram: "https://www.instagram.com/dian_dwi_mp/" },
+        { linkfoto: "/img/bg-effect.jpg", nama: 'Aldan Prayogi', role: "Staff", linkedin: "www.linkedin.com/in/aldan-prayogi-3bb66a252", instagram: "https://www.instagram.com/aldan_prayogi/" },
+        { linkfoto: "/img/bg-effect.jpg", nama: 'Muhammad Abdul Aziz Al-Ghifary', role: "Staff", linkedin: "https://www.linkedin.com/in/muhammad-abdul-aziz-alghiffari-a3ab9327b/", instagram: "https://www.instagram.com/ghiffariii._/" },
+        { linkfoto: "/img/bg-effect.jpg", nama: 'Reyhana Naufal El-Bahreisyi', role: "Staff", linkedin: "#", instagram: "https://www.instagram.com/reyhanaufal_/" },
+        { linkfoto: "/img/bg-effect.jpg", nama: 'M. Dwi Chandra', role: "Staff", linkedin: "https://www.linkedin.com/in/diana-jones154df56/", instagram: "https://www.instagram.com/ch_ndraa/" },
+    ];
     useEffect(() => {
         Aos.init();
     }, [])
@@ -29,6 +37,44 @@ export default function Content() {
                     </div>
                 </div>
             </div>
+            <div className="pt-12 p-4 h-screen">
+                <h1 className="text-4xl text-center">OUR TEAM</h1>
+                <div className="mt-4 gap-5 gap-y-5 justify-center align-middle xl:flex px-14 grid md:grid-cols-3 ">
+
+                    {dataorang.map((item, index) => {
+                        return (
+                            <div key={index} className={`relative h-[30rem] lg:h-96 lg:w-60 overflow-hidden p-2 shadow-lg bg-gray-300 rounded-xl`} data-aos={`${index == 2 ? "zoom-in-up" : index < 2 ? "fade-right" : "fade-left"}`}>
+                                <div className="flex flex-col items-center justify-around">
+                                    <div className={`w-40 h-40 lg:w-40 lg:h-40 mt-10 ${"bg-[url('" + item.linkfoto + "')]"} rounded-full`}>
+
+                                    </div>
+                                    <div className="mt-10 text-center text-lg">{item.nama}</div>
+                                </div>
+                                <div className="absolute bottom-28 lg:bottom-[3.5rem] w-full">
+                                    <div className="mt-2 text-center text-sm">{item.role}</div>
+                                </div>
+
+                                <div className="absolute bottom-10 lg:bottom-3 w-full ">
+                                    <div className=" flex flex-row item justify-center gap-4">
+
+                                        <div className="hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out delay-150 border-2 border-black p-1 h-9 w-9 bg-transparent rounded-lg">
+                                            <Link to={item.instagram}>
+                                                <img className="invert" src="/LogoIG.png" />
+                                            </Link>
+                                        </div>
+                                        <div className="hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out delay-150 h-9 w-9 border-2 border-gray-50 p-1 invert rounded-lg">
+                                            <Link to={item.linkedin}>
+                                                <img className="" src="/img/linkedin.svg" />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div >
+
         </>
     );
 }

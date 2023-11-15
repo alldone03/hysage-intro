@@ -89,9 +89,6 @@ export default function Navbar() {
                     <button className="invisible font-bold md:visible hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out delay-150 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 px-5 rounded-md text-white py-1">
                         ORDER NOW
                     </button>
-
-
-
                 </div>
             </div>
         </nav>
