@@ -1,6 +1,7 @@
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
     const [isNavbarVisible, setNavbarVisibility] = useState(false);
@@ -9,21 +10,24 @@ export default function Navbar() {
     };
 
     const dataNavbar = [
-        { name: "Home", link: '/' },
+        { name: "Home", link: '/#' },
+        { name: "Feature", link: '/' },
         { name: "Product", link: '/product' },
-        { name: "Contact Us", link: '/' },
+        { name: "About Us", link: '/#aboutus' },
     ];
+
     useEffect(() => {
         Aos.init();
+
     }, [])
     return (
         <nav className="bg-white border-gray-200 z-50 fixed w-full  -top-0">
             <div className="w-screen flex flex-wrap items-center justify-between p-4 md:px-10">
-                <a href="" className="flex items-center">
+                <HashLink to="/" className="flex items-center">
                     <span className="self-center text-2xl font-semibold whitespace-nowrap text-black text-abc w-[165px]">
                         Hysage
                     </span>
-                </a>
+                </HashLink>
 
                 <button
                     onClick={toggleNavbar}
@@ -56,25 +60,30 @@ export default function Navbar() {
                             ? "hidden w-full md:block md:w-auto "
                             : "w-full md:block md:w-auto "
                     }
-                    id="navbar-default"
                 >
                     <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border shadow-lg md:shadow-none border-gray-100 rounded-lg bg-white md:flex-row  md:mt-0 md:border-0 md:bg-white   ">
                         {dataNavbar.map((data, index) => {
                             return (
                                 <li key={index}>
-                                    <Link to={data.link} className="block py-2 pl-3 pr-4 md:px-4 text-black rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-black md:hover:text-gray-400 md:p-0   ">
+                                    {!data.link.includes('#') ?
+                                        <HashLink to={data.link} className="block py-2 pl-3 pr-4 md:px-4 text-black rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-black md:hover:text-gray-400 md:p-0   ">
+                                            {data.name}
+                                        </HashLink> : <HashLink smooth to={data.link} className="block py-2 pl-3 pr-4 md:px-4 text-black rounded-lg hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:text-black md:hover:text-gray-400 md:p-0   ">
+                                            {data.name}
+
+                                        </HashLink>}
 
 
-                                        {data.name}
-
-                                    </Link>
                                 </li>
                             );
                         })}
                         <li>
-                            <button className="md:hidden transition-colors duration-300 ease-in-out delay-300 bg-gradient-to-r from-cyan-500 to-blue-500 px-5 rounded-md text-white py-1">
-                                ORDER NOW
-                            </button>
+                            <Link to={"https://www.instagram.com/hysage.id/"} target="_blank">
+
+                                <button className="md:hidden transition-colors duration-300 ease-in-out delay-300 bg-gradient-to-r from-cyan-500 to-blue-500 px-5 rounded-md text-white py-1">
+                                    ORDER NOW
+                                </button>
+                            </Link>
                         </li>
                     </ul>
                 </div>
@@ -86,11 +95,14 @@ export default function Navbar() {
                     }
                     id="navbar-default"
                 >
-                    <button className="invisible font-bold md:visible hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out delay-150 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 px-5 rounded-md text-white py-1">
-                        ORDER NOW
-                    </button>
+                    <Link to={"https://www.instagram.com/hysage.id/"} target="_blank">
+
+                        <button className="invisible font-bold md:visible hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out delay-150 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 px-5 rounded-md text-white py-1">
+                            ORDER NOW
+                        </button>
+                    </Link>
                 </div>
             </div>
-        </nav>
+        </nav >
     );
 }
