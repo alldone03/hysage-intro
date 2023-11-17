@@ -78,7 +78,7 @@ export default function Navbar() {
                             );
                         })}
                         <li>
-                            <Link to={"https://www.instagram.com/hysage.id/"} target="_blank">
+                            <Link to={"https://www.instagram.com/hysage.id/"} aria-label="ORDER NOW" rel="noopener noreferrer" target="_blank">
 
                                 <button className="md:hidden transition-colors duration-300 ease-in-out delay-300 bg-gradient-to-r from-cyan-500 to-blue-500 px-5 rounded-md text-white py-1">
                                     ORDER NOW
@@ -95,7 +95,7 @@ export default function Navbar() {
                     }
                     id="navbar-default"
                 >
-                    <Link to={"https://www.instagram.com/hysage.id/"} target="_blank">
+                    <Link to={"https://www.instagram.com/hysage.id/"} aria-label="ORDER NOW" rel="noopener noreferrer" target="_blank">
 
                         <button className="invisible font-bold md:visible hover:-translate-y-1 hover:scale-105 transition duration-300 ease-in-out delay-150 bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-blue-500 hover:to-cyan-500 px-5 rounded-md text-white py-1">
                             ORDER NOW

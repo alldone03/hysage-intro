@@ -30,16 +30,18 @@ export default function Content() {
             <div id="home"></div>
             <div className="absolute bg-[url('/img/bg-effect.webp')] w-screen h-screen  bg-cover xl:h-[100%] xl:w-[100%]  left-0 top-0 backdrop-blur-2xl brightness-50 pt-20 p-4 ">
             </div>
+            <div>
 
-            <div data-aos="zoom-in-up" className="relative z-10 pt-20 p-4 min-h-screen flex flex-col min-w-full justify-center text-center">
-
-
-                <div className="text-white text-7xl xl:text-9xl font-semibold font-['Roboto Flex']">HyGrow.</div>
-                <div className=" h-11 mt-4 text-white text-2xl xl:text-4xl font-semibold font-['Roboto Flex']">Grow Beyond Limits</div>
+                <div data-aos="zoom-in-up" className="relative z-10 pt-20 p-4 min-h-screen flex flex-col min-w-full justify-center text-center">
 
 
+                    <div className="text-white text-7xl xl:text-9xl font-semibold font-['Roboto Flex']">HyGrow.</div>
+                    <div className=" h-11 mt-4 text-white text-2xl xl:text-4xl font-semibold font-['Roboto Flex']">Grow Beyond Limits</div>
+
+
+                </div>
             </div>
-            <div className="h-screen pt-24 p-4 flex flex-col xl:flex-row-reverse  xl:items-center justify-center " id="aboutus">
+            <div className=" h-screen pt-24 p-4 flex flex-col xl:flex-row-reverse  xl:items-center justify-center " id="aboutus">
                 <div className="flex flex-col xl:flex-row   justify-center xl:gap-14">
 
                     <div data-aos="fade-left" className="w-[371px] h-[541px] bg-[url('/img/bg-effect.webp')] self-center rounded-xl  "></div>
@@ -65,7 +67,7 @@ export default function Content() {
 
                 </div>
             </div>
-            <div className="pt-12 p-4 h-screen">
+            <div className=" pt-20 p-4 ">
                 <h1 data-aos="zoom-in" className="text-4xl text-center">OUR TEAM</h1>
                 <div className="mt-4 gap-5 gap-y-5 justify-center align-middle xl:flex px-14 grid md:grid-cols-3 ">
 
@@ -100,6 +102,25 @@ export default function Content() {
                             </div>
                         );
                     })}
+                </div>
+            </div >
+
+            <div className=" pt-20 xl:pt-20  p-4 h-screen">
+                <h1 data-aos="zoom-in" className="text-4xl text-center">OUR PRODUCT</h1>
+                <div className="w-full flex flex-row justify-around pt-6">
+                    <div className="w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl">
+                        <div className="rounded-3xl h-14 text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
+                            Basic
+                        </div>
+                        <div className="pt-2 text-center">
+                            IDR 900.000
+                        </div>
+                        <div className="text-center">
+                            HySage Smart Module with Box
+                        </div>
+                    </div>
+                    <div className="w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl"></div>
+                    <div className="w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl"></div>
                 </div>
             </div >
 
