@@ -168,7 +168,7 @@ export default function Content() {
             <div className=" absolute w-full pt-16 font-bold text-xl text-center">
               IDR 900.000
             </div>
-            <div className="absolute pt-16 text-center h-full min-h-full flex flex-col justify-center">
+            <div className="absolute pt-16 text-center h-full min-h-full flex flex-col text-sm justify-center">
               <div>HySage Smart Module with Box</div>
             </div>
           </div>
@@ -177,10 +177,19 @@ export default function Content() {
               Pro
             </div>
             <div className=" absolute w-full pt-16 font-bold text-xl text-center">
-              IDR 900.000
+              IDR 2.000.000
             </div>
-            <div className="absolute pt-16 text-center h-full min-h-full flex flex-col justify-center">
-              <div>HySage Smart Module with Box</div>
+            <div className="absolute   h-full min-h-full text-sm pt-20 justify-center p-3">
+              <div className="pt-5">
+                Fullset HySage
+                <ul className="list-disc list-inside">
+                  <li>pH Sensor</li>
+                  <li>TDS Sensor</li>
+                  <li>AB Mix 1L</li>
+                  <li>pH up 250mL</li>
+                  <li>pH down 250mL</li>
+                </ul>
+              </div>
             </div>
           </div>
           <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl ">
@@ -188,20 +197,24 @@ export default function Content() {
               Premium
             </div>
             <div className=" absolute w-full pt-16 font-bold text-xl text-center">
-              IDR 900.000
+              IDR 2.250.000
             </div>
-            <div className="absolute  text-center h-full min-h-full flex flex-col pt-16 justify-center p-3">
-              <div>
-                <ul>
-                  <li>hello</li>
-                  <li>hello</li>
-                  <li>hello</li>
-                  <li>hello</li>
-                  <li>hello</li>
+            <div className="absolute   h-full min-h-full text-sm pt-20 justify-center p-3">
+              <div className="pt-5">
+                <ul className="list-disc list-inside">
+                  <li>Fullset HySage</li>
+                  <li>Membership 1 month</li>
+                  <li>Early Access to Newest Product</li>
+                  <li>Merchandise</li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
+        <div className="w-full flex flex-row justify-center pt-8">
+          <button className="bg-gray-300 rounded-2xl h-10 w-32 hover:-translate-y-1 hover:scale-105 hover:border-blue-500 hover:border-2 transition duration-300 ease-in-out delay-150">
+            Learn More
+          </button>
         </div>
       </div>
     </>
