@@ -6,21 +6,21 @@ import { Link } from "react-router-dom";
 export default function Content() {
   const dataorang = [
     {
-      linkfoto: "/img/bg-effect.webp",
+      linkfoto: "/img/ourteam/dian.webp",
       nama: "Rahadian Dwi Martina Putra",
       role: "CEO",
       linkedin: "#",
       instagram: "https://www.instagram.com/dian_dwi_mp/",
     },
     {
-      linkfoto: "/img/bg-effect.webp",
+      linkfoto: "/img/ourteam/aldan.webp",
       nama: "Aldan Prayogi",
       role: "Project Management",
       linkedin: "www.linkedin.com/in/aldan-prayogi-3bb66a252",
       instagram: "https://www.instagram.com/aldan_prayogi/",
     },
     {
-      linkfoto: "/img/bg-effect.webp",
+      linkfoto: "/img/ourteam/ghiffar.webp",
       nama: "Muhammad Abdul Aziz Alghiffari",
       role: "Administration",
       linkedin:
@@ -28,28 +28,30 @@ export default function Content() {
       instagram: "https://www.instagram.com/ghiffariii._/",
     },
     {
-      linkfoto: "/img/bg-effect.webp",
+      linkfoto: "/img/ourteam/reyhana.webp",
       nama: "Reyhana Naufal El-Bahreisyi",
       role: "Electrical Engineering",
       linkedin: "#",
       instagram: "https://www.instagram.com/reyhanaufal_/",
     },
     {
-      linkfoto: "/img/bg-effect.webp",
+      linkfoto: "/img/ourteam/chandra.webp",
       nama: "M. Dwi Chandra",
       role: "Technical Engineering",
       linkedin: "https://www.linkedin.com/in/diana-jones154df56/",
       instagram: "https://www.instagram.com/ch_ndraa/",
     },
   ];
-
+  //bg-[url('/img/bg-effect.webp')]
   useEffect(() => {
     Aos.init();
   }, []);
   return (
     <>
       <div id="home"></div>
-      <div className="absolute bg-[url('/img/bg-effect.webp')] w-screen h-screen  bg-cover xl:h-[100%] xl:w-[100%]  left-0 top-0 backdrop-blur-2xl brightness-50 pt-20 p-4 "></div>
+      <div className="absolute bg-[url('/img/bg-effect.webp')] w-screen h-screen  bg-cover xl:h-[100%] xl:w-[100%]  left-0 top-0 backdrop-blur-2xl brightness-50 pt-20 p-4 ">
+        {/* <div className="bg-gradient-to-b from-transparent to-white w-full absolute h-[100px] left-0 bottom-0"></div> */}
+      </div>
       <div>
         <div
           data-aos="zoom-in-up"
@@ -96,14 +98,14 @@ export default function Content() {
             data-aos="fade-left"
             className="w-[371px] h-[541px] bg-[url('/img/bg-effect.webp')] self-center rounded-xl  "
           ></div>
-          <div
-            data-aos="fade-right"
-            className="text-center xl:text-left pt-4 xl:text-xl xl:w-[50rem]"
-          >
+          <div className="text-center xl:text-left pt-4 xl:text-xl xl:w-[50rem]">
             <h1 className=" text-4xl">Our Products</h1>
             <div className="h-4"></div>
             <div className="flex flex-col gap-9">
-              <div className=" outline outline-2 outline-gray-900   rounded-lg p-5">
+              <div
+                data-aos="zoom-in-up"
+                className=" outline outline-2 outline-gray-900   rounded-lg p-5"
+              >
                 <div className="flex justify-between">
                   <div className="flex flex-col">
                     <h1 className="text-3xl font-bold">BASIC</h1>
@@ -116,7 +118,10 @@ export default function Content() {
                   </div>
                 </div>
               </div>
-              <div className=" outline outline-2 outline-gray-900   rounded-lg p-5">
+              <div
+                data-aos="zoom-in-up"
+                className=" outline outline-2 outline-gray-900   rounded-lg p-5"
+              >
                 <div className="flex justify-between">
                   <div className="flex flex-col">
                     <h1 className="text-3xl font-bold">PRO</h1>
@@ -132,7 +137,10 @@ export default function Content() {
                   </div>
                 </div>
               </div>
-              <div className=" outline outline-2 outline-gray-900   rounded-lg p-5">
+              <div
+                data-aos="zoom-in-up"
+                className=" outline outline-2 outline-gray-900   rounded-lg p-5"
+              >
                 <div className="flex justify-between">
                   <div className="flex flex-col">
                     <h1 className="text-3xl font-bold">Premium</h1>
@@ -156,7 +164,10 @@ export default function Content() {
             OUR PRODUCT
           </h1>
           <div className="w-full flex flex-col gap-8 xl:gap-0 xl:px-60 items-center xl:flex-row xl:justify-around pt-6">
-            <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl">
+            <div
+              data-aos="zoom-in-up"
+              className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl"
+            >
               <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
                 Basic
               </div>
@@ -167,7 +178,10 @@ export default function Content() {
                 <div>HySage Smart Module with Box</div>
               </div>
             </div>
-            <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl">
+            <div
+              data-aos="zoom-in-up"
+              className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl"
+            >
               <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
                 Pro
               </div>
@@ -187,7 +201,10 @@ export default function Content() {
                 </div>
               </div>
             </div>
-            <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl ">
+            <div
+              data-aos="zoom-in-up"
+              className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl "
+            >
               <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
                 Premium
               </div>
@@ -231,10 +248,14 @@ export default function Content() {
               >
                 <div className="flex flex-col items-center justify-around">
                   <div
-                    className={`w-40 h-40 lg:w-40 lg:h-40 mt-10 ${
-                      "bg-[url('" + item.linkfoto + "')]"
-                    } rounded-full`}
-                  ></div>
+                    className={`w-800 h-60 lg:w-60 lg:h-40 mt-10 rounded-full`}
+                  >
+                    <img
+                      className="-rotate-90 rounded-lg max-w-full h-auto"
+                      src={item.linkfoto}
+                      alt={item.linkfoto}
+                    />
+                  </div>
                   <div className="mt-10 text-center text-lg">{item.nama}</div>
                 </div>
                 <div className="absolute left-0 bottom-28 lg:bottom-[3.5rem] w-full">
