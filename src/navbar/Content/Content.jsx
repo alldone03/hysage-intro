@@ -300,7 +300,7 @@ export default function Content() {
             </Link>
           </div>
         </div>
-        <div className="text-center pb-10 pt-10">@HySage 2023</div>
+        <div className="text-center pb-10 pt-10">&copy; HySage 2023</div>
       </footer>
     </>
   );
