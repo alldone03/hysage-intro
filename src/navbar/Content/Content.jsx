@@ -90,7 +90,128 @@ export default function Content() {
           </div>
         </div>
       </div>
-      <div className=" pt-20 p-4 ">
+      <div id="product">
+        <div className=" invisible md:visible pt-0 md:pt-20 xl:pt-0 p-4 h-0 md:h-screen flex flex-row gap-7 xl:items-center justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-[371px] h-[541px] bg-[url('/img/bg-effect.webp')] self-center rounded-xl  "
+          ></div>
+          <div
+            data-aos="fade-right"
+            className="text-center xl:text-left pt-4 xl:text-xl xl:w-[50rem]"
+          >
+            <h1 className=" text-4xl">Our Products</h1>
+            <div className="h-4"></div>
+            <div className="flex flex-col gap-9">
+              <div className=" outline outline-2 outline-gray-900   rounded-lg p-5">
+                <div className="flex justify-between">
+                  <div className="flex flex-col">
+                    <h1 className="text-3xl font-bold">BASIC</h1>
+                    <h1 className="text-lg ">HySage Smart Module with Box</h1>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="text-center text-4xl font-bold ">
+                      IDR 900.000
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className=" outline outline-2 outline-gray-900   rounded-lg p-5">
+                <div className="flex justify-between">
+                  <div className="flex flex-col">
+                    <h1 className="text-3xl font-bold">PRO</h1>
+                    <h1 className="text-lg w-96">
+                      Fullset HySage Included pH Sensor, TDS Sensor, AB Mix 1L,
+                      pH up & down 250mL
+                    </h1>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="text-center text-4xl font-bold ">
+                      IDR 2.000.000
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className=" outline outline-2 outline-gray-900   rounded-lg p-5">
+                <div className="flex justify-between">
+                  <div className="flex flex-col">
+                    <h1 className="text-3xl font-bold">Premium</h1>
+                    <h1 className="text-lg w-96">
+                      Fullset HySAGE, Membership for 1 month, Early access to
+                      newest product, Merchandise HySAGE
+                    </h1>
+                  </div>
+                  <div className="flex flex-col items-center justify-center">
+                    <div className="text-center text-4xl font-bold ">
+                      IDR 2.250.000
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="visible md:hidden pt-20 xl:pt-20  p-4 h-screen">
+          <h1 data-aos="zoom-in" className="text-4xl text-center">
+            OUR PRODUCT
+          </h1>
+          <div className="w-full flex flex-col gap-8 xl:gap-0 xl:px-60 items-center xl:flex-row xl:justify-around pt-6">
+            <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl">
+              <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
+                Basic
+              </div>
+              <div className=" absolute w-full pt-16 font-bold text-xl text-center">
+                IDR 900.000
+              </div>
+              <div className="absolute pt-16 text-center h-full min-h-full flex flex-col text-sm justify-center">
+                <div>HySage Smart Module with Box</div>
+              </div>
+            </div>
+            <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl">
+              <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
+                Pro
+              </div>
+              <div className=" absolute w-full pt-16 font-bold text-xl text-center">
+                IDR 2.000.000
+              </div>
+              <div className="absolute   h-full min-h-full text-sm pt-20 justify-center p-3">
+                <div className="pt-5">
+                  Fullset HySage
+                  <ul className="list-disc list-inside">
+                    <li>pH Sensor</li>
+                    <li>TDS Sensor</li>
+                    <li>AB Mix 1L</li>
+                    <li>pH up 250mL</li>
+                    <li>pH down 250mL</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl ">
+              <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
+                Premium
+              </div>
+              <div className=" absolute w-full pt-16 font-bold text-xl text-center">
+                IDR 2.250.000
+              </div>
+              <div className="absolute   h-full min-h-full text-sm pt-20 justify-center p-3">
+                <div className="pt-5">
+                  <ul className="list-disc list-inside">
+                    <li>Fullset HySage</li>
+                    <li>Membership 1 month</li>
+                    <li>Early Access to Newest Product</li>
+                    <li>Merchandise</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex flex-row justify-center pt-8"></div>
+        </div>
+      </div>
+
+      <div className="h-7 md:h-0"></div>
+      <div className="pt-56 md:pt-20 p-4 ">
         <h1 data-aos="zoom-in" className="text-4xl text-center">
           OUR TEAM
         </h1>
@@ -129,7 +250,7 @@ export default function Content() {
                         to={item.instagram}
                       >
                         <img
-                          className="invert h-fit w-fit"
+                          className="invert md:h-fit md:w-fit"
                           src="/img/LogoIG.webp"
                           alt="logo-instagram"
                         />
@@ -155,68 +276,32 @@ export default function Content() {
           })}
         </div>
       </div>
-
-      <div className=" pt-20 xl:pt-20  p-4 h-screen">
-        <h1 data-aos="zoom-in" className="text-4xl text-center">
-          OUR PRODUCT
-        </h1>
-        <div className="w-full flex flex-col gap-8 xl:gap-0 xl:px-60 items-center xl:flex-row xl:justify-around pt-6">
-          <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl">
-            <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
-              Basic
-            </div>
-            <div className=" absolute w-full pt-16 font-bold text-xl text-center">
-              IDR 900.000
-            </div>
-            <div className="absolute pt-16 text-center h-full min-h-full flex flex-col text-sm justify-center">
-              <div>HySage Smart Module with Box</div>
-            </div>
-          </div>
-          <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl">
-            <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
-              Pro
-            </div>
-            <div className=" absolute w-full pt-16 font-bold text-xl text-center">
-              IDR 2.000.000
-            </div>
-            <div className="absolute   h-full min-h-full text-sm pt-20 justify-center p-3">
-              <div className="pt-5">
-                Fullset HySage
-                <ul className="list-disc list-inside">
-                  <li>pH Sensor</li>
-                  <li>TDS Sensor</li>
-                  <li>AB Mix 1L</li>
-                  <li>pH up 250mL</li>
-                  <li>pH down 250mL</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="relative w-48 h-64 border border-gray-200 bg-gray-300 rounded-3xl ">
-            <div className="absolute rounded-3xl w-full h-14 font-bold text-center self-center flex flex-col justify-center text-2xl text-white bg-gradient-to-r from-cyan-500 to-blue-500 ">
-              Premium
-            </div>
-            <div className=" absolute w-full pt-16 font-bold text-xl text-center">
-              IDR 2.250.000
-            </div>
-            <div className="absolute   h-full min-h-full text-sm pt-20 justify-center p-3">
-              <div className="pt-5">
-                <ul className="list-disc list-inside">
-                  <li>Fullset HySage</li>
-                  <li>Membership 1 month</li>
-                  <li>Early Access to Newest Product</li>
-                  <li>Merchandise</li>
-                </ul>
-              </div>
-            </div>
+      <footer class="bg-gradient-to-b from-white via-sky-500 to-blue-900 text-white">
+        <div className="pt-36 w-screen  flex justify-around flex-col items-center gap-4 ">
+          {/* <div className=" text-center text-white pt-20">
+            <h1 className="font-bold text-2xl">Help & Support</h1>
+            <br />
+            <h2>Contact Us</h2>
+            <h2>Support Center</h2>
+            <h2>Work With Us</h2>
+          </div> */}
+          <div className="flex items-center flex-col gap-3">
+            <h1 className="font-bold text-2xl">Follow Us</h1>
+            <Link
+              className="h-9 w-9"
+              to={"https://www.instagram.com/hysage.id/"}
+              target="_blank"
+            >
+              <img
+                className="md:h-fit md:w-fit"
+                src="/img/LogoIG.webp"
+                alt="logo-instagram"
+              />
+            </Link>
           </div>
         </div>
-        <div className="w-full flex flex-row justify-center pt-8">
-          <button className="bg-gray-300 rounded-2xl h-10 w-32 hover:-translate-y-1 hover:scale-105 hover:border-blue-500 hover:border-2 transition duration-300 ease-in-out delay-150">
-            Learn More
-          </button>
-        </div>
-      </div>
+        <div className="text-center pb-10 pt-10">@HySage 2023</div>
+      </footer>
     </>
   );
 }

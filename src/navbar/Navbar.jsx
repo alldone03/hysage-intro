@@ -11,9 +11,8 @@ export default function Navbar() {
 
   const dataNavbar = [
     { name: "Home", link: "/#" },
-    { name: "Feature", link: "/" },
-    { name: "Product", link: "/product" },
     { name: "About Us", link: "/#aboutus" },
+    { name: "Product", link: "/#product" },
   ];
 
   useEffect(() => {
