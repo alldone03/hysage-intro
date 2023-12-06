@@ -3,7 +3,7 @@ import Content from "./Content";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Navbar />
       <Content />
     </div>

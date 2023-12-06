@@ -1,5 +1,5 @@
 import Aos from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
 import Ourproduct from "./Ourproduct";
@@ -43,8 +43,15 @@ export default function Content() {
       instagram: "https://www.instagram.com/ch_ndraa/",
     },
   ];
-  //bg-[url('/img/bg-effect.webp')]
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+
+    setScrollPosition(position);
+  };
+
   useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
     Aos.init();
   }, []);
   return (
@@ -52,7 +59,9 @@ export default function Content() {
       <Link
         to={"http://wa.me/+62895339377151"}
         target="_blank"
-        className="fixed w-16 h-16 z-10 md:w-20 md:h-20 bg-cyan-500 hover:bg-cyan-800  rounded-3xl right-10 bottom-10 md:right-7 md:bottom-7 flex items-center justify-center"
+        className={`fixed ${
+          scrollPosition > 100 ? "visible" : "invisible"
+        } z-10 w-16 h-16  md:w-20 md:h-20 bg-cyan-500 hover:bg-cyan-800  rounded-3xl right-10 bottom-10 md:right-7 md:bottom-7 flex items-center justify-center`}
       >
         <img className="invert w-10 " src="/img/conversation.png" alt="" />
       </Link>
@@ -60,6 +69,7 @@ export default function Content() {
       <div className="absolute bg-[url('/img/bg-effect.webp')] w-screen h-screen  bg-cover xl:h-[100%] xl:w-[100%]  left-0 top-0 backdrop-blur-2xl brightness-50 pt-20 p-4 ">
         {/* <div className="bg-gradient-to-b from-transparent to-white w-full absolute h-[100px] left-0 bottom-0"></div> */}
       </div>
+
       <div>
         <div
           data-aos="zoom-in-up"
@@ -172,7 +182,7 @@ export default function Content() {
           })}
         </div>
       </div>
-      <footer class="bg-gradient-to-b from-white via-sky-500 to-blue-900 text-white">
+      <footer className="bg-gradient-to-b from-white via-sky-500 to-blue-900 text-white">
         <div className="pt-36 w-screen  flex justify-around flex-col items-center gap-4 ">
           {/* <div className=" text-center text-white pt-20">
             <h1 className="font-bold text-2xl">Help & Support</h1>
