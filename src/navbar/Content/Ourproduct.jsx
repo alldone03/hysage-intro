@@ -4,7 +4,7 @@ export default function Ourproduct() {
   const [imagearr, setImageArray] = useState(0);
   const linkimage = [
     "/img/bg-effect.webp",
-    "/img/LogoIN.png",
+    "/img/bg-effect.webp",
     "/img/bg-effect.webp",
   ];
   return (
@@ -25,7 +25,7 @@ export default function Ourproduct() {
                 setImageArray(1);
               }}
               data-aos="fade-up"
-              className="outline outline-2 mt-10 rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
+              className="animate-bounce  outline outline-2 mt-10 rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
             >
               <div className="flex justify-between">
                 <div className="flex flex-col">
@@ -42,7 +42,7 @@ export default function Ourproduct() {
                 setImageArray(2);
               }}
               data-aos="fade-up"
-              className="outline outline-2  rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
+              className="animate-bounce  outline outline-2  rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
             >
               <div className="flex justify-between">
                 <div className="flex flex-col">
