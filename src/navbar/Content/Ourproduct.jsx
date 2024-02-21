@@ -4,28 +4,31 @@ export default function Ourproduct() {
   const [imagearr, setImageArray] = useState(0);
   const linkimage = [
     "/img/bg-effect.webp",
-    "/img/bg-effect.webp",
-    "/img/bg-effect.webp",
+    "/img/IMG_1471.jpg",
+    "/img/IMG_1473.jpg",
   ];
   return (
     <div id="product">
       <div className=" visible md:visible pt-16 md:pt-20 xl:pt-0 p-4 h-0 md:h-screen flex flex-col gap-7 xl:items-center md:flex md:flex-col ">
         <h1 className=" text-4xl text-center ">Our Products</h1>
         <div className="flex flex-col md:flex md:flex-row  items-center ">
-          <div data-aos="fade-left" className="w-[371px] h-[541px]">
+          <div data-aos="fade-left" className="">
             <img
               src={linkimage[imagearr]}
-              className="rounded-xl"
+              className="rounded-xl w-full h-[571px] "
               alt={linkimage[imagearr]}
             />
           </div>
           <div className="flex flex-col gap-10 md:w-[40rem] md:pl-24">
             <div
-              onClick={() => {
+              onMouseEnter={() => {
                 setImageArray(1);
               }}
+              onMouseLeave={() => {
+                setImageArray(0);
+              }}
               data-aos="fade-up"
-              className="animate-bounce  outline outline-2 mt-10 rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
+              className="  outline outline-2 mt-10 rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
             >
               <div className="flex justify-between">
                 <div className="flex flex-col">
@@ -38,11 +41,11 @@ export default function Ourproduct() {
               </div>
             </div>
             <div
-              onClick={() => {
+              onMouseEnter={() => {
                 setImageArray(2);
               }}
               data-aos="fade-up"
-              className="animate-bounce  outline outline-2  rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
+              className="  outline outline-2  rounded-lg p-2 bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 mx-4 hover:text-white "
             >
               <div className="flex justify-between">
                 <div className="flex flex-col">
